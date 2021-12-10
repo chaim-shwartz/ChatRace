@@ -14,7 +14,7 @@ app.use(cookieParser());
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(express.static('public'));
 app.use(express.json())
-mongoose.connect("mongodb+srv://admin-chaim:Test123@cluster0.n1jx0.mongodb.net/ChatWebProject", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://admin-chaim:@cluster0.n1jx0.mongodb.net/ChatWebProject", {useNewUrlParser: true});
 
 const itemsSchema = {
   senderID: String,
